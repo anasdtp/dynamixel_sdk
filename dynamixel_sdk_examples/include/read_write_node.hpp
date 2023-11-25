@@ -25,6 +25,7 @@
 #include "dynamixel_sdk_custom_interfaces/msg/set_position.hpp"
 #include "dynamixel_sdk_custom_interfaces/srv/get_position.hpp"
 
+#include "lib_dynamixel.h"
 
 class ReadWriteNode : public rclcpp::Node
 {
@@ -38,7 +39,6 @@ public:
 private:
   rclcpp::Subscription<SetPosition>::SharedPtr set_position_subscriber_;
   rclcpp::Service<GetPosition>::SharedPtr get_position_server_;
-
   int present_position;
 };
 

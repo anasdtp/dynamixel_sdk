@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f81c71feefb0d5dd87d0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "lib_dynamixel",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "lib_dynamixel::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lib_dynamixel-Debug-75bfda72a07c80b77716.json",
+					"name" : "lib_dynamixel",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lib_dynamixel_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lib_dynamixel_uninstall-Debug-02f4efb23d8b314cf9f4.json",
+					"name" : "lib_dynamixel_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Debug-bcc6cb28b90423b3db34.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/anas/ros2_humble/src/dynamixel_sdk/lib_dynamixel/build",
+		"source" : "/home/anas/ros2_humble/src/dynamixel_sdk/lib_dynamixel"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/anas/ros2_humble/src/dynamixel_sdk/lib_dynamixel/build",
+  "command": "/usr/bin/g++ -Dlib_dynamixel_EXPORTS -I/home/anas/ros2_humble/src/dynamixel_sdk/lib_dynamixel/include -I/home/anas/ros2_humble/install/dynamixel_sdk/include -g -fPIC -Wall -Wextra -Wpedantic -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -o CMakeFiles/lib_dynamixel.dir/src/lib_dynamixel.cpp.o -c /home/anas/ros2_humble/src/dynamixel_sdk/lib_dynamixel/src/lib_dynamixel.cpp",
+  "file": "/home/anas/ros2_humble/src/dynamixel_sdk/lib_dynamixel/src/lib_dynamixel.cpp"
+}
+]

@@ -10,9 +10,12 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+set(lib_dynamixel_DIR "/home/anas/ros2_humble/install/lib_dynamixel/share/lib_dynamixel/cmake")
+
 # Find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(dynamixel_sdk REQUIRED)
+find_package(lib_dynamixel REQUIRED)
 find_package(dynamixel_sdk_custom_interfaces REQUIRED)
 find_package(rclcpp REQUIRED)
 
@@ -23,6 +26,7 @@ add_executable(read_write_node src/read_write_node.cpp)
 ament_target_dependencies(read_write_node
   dynamixel_sdk_custom_interfaces
   dynamixel_sdk
+  lib_dynamixel
   rclcpp
 )
 
