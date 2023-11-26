@@ -116,7 +116,7 @@
 #define AX_SPEED_LENGTH             5
 #define AX_GOAL_SP_LENGTH           7
 #define AX_ACTION_CHECKSUM			250
-#define BROADCAST_ID                254
+#define BROADCASTID                 254
 #define AX_START                    255
 #define AX_CCW_AL_L                 255 
 #define AX_CCW_AL_H                 3
@@ -153,6 +153,8 @@ public:
   int move(uint8_t id, uint16_t position);
   int moveSpeed(uint8_t id, uint16_t position, uint16_t Speed);
   int turn(uint8_t id, bool SIDE, uint16_t Speed);
+  
+  int setSpeed(uint8_t id, uint16_t Speed);
 
   int readPosition(uint8_t id);
   int readTemperature(uint8_t id);

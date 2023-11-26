@@ -22,7 +22,10 @@ find_package(rclcpp REQUIRED)
 include_directories(include)
 
 # Build
-add_executable(read_write_node src/read_write_node.cpp)
+add_library(read_write_node SHARED
+    include/read_write_node.h
+    src/read_write_node.cpp
+)
 ament_target_dependencies(read_write_node
   dynamixel_sdk_custom_interfaces
   dynamixel_sdk
@@ -30,9 +33,25 @@ ament_target_dependencies(read_write_node
   rclcpp
 )
 
+add_executable(dynamixel_node 
+  main.cpp
+)
+ament_target_dependencies(dynamixel_node
+  dynamixel_sdk_custom_interfaces
+  dynamixel_sdk
+  lib_dynamixel
+  rclcpp
+)
+
+# Ajout de l'exécutable et de la bibliothèque dans le même répertoire
+target_include_directories(dynamixel_node PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+
+# Ajout de la bibliothèque à l'exécutable
+target_link_libraries(dynamixel_node read_write_node)
+
 # Install
 install(TARGETS
-  read_write_node
+  dynamixel_node
   DESTINATION lib/${PROJECT_NAME}
 )
 

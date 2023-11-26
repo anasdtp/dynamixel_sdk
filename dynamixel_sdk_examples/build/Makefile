@@ -210,6 +210,43 @@ read_write_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_write_node.dir/build.make CMakeFiles/read_write_node.dir/build
 .PHONY : read_write_node/fast
 
+#=============================================================================
+# Target rules for targets named dynamixel_node
+
+# Build rule for target.
+dynamixel_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dynamixel_node
+.PHONY : dynamixel_node
+
+# fast build rule for target.
+dynamixel_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_node.dir/build.make CMakeFiles/dynamixel_node.dir/build
+.PHONY : dynamixel_node/fast
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_node.dir/build.make CMakeFiles/dynamixel_node.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_node.dir/build.make CMakeFiles/dynamixel_node.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_node.dir/build.make CMakeFiles/dynamixel_node.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 src/read_write_node.o: src/read_write_node.cpp.o
 .PHONY : src/read_write_node.o
 
@@ -249,7 +286,11 @@ help:
 	@echo "... test"
 	@echo "... dynamixel_sdk_examples_uninstall"
 	@echo "... uninstall"
+	@echo "... dynamixel_node"
 	@echo "... read_write_node"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... src/read_write_node.o"
 	@echo "... src/read_write_node.i"
 	@echo "... src/read_write_node.s"
