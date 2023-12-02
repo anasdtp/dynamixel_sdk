@@ -1,6 +1,12 @@
 #include "read_write_node.h"
 
 
+
+
+
+
+
+
 // lib_dynamixel AX12A;
 
 int main(int argc, char *argv[])

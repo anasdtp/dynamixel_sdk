@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Site BuildName="(empty)"
-	BuildStamp="20231126-0041-Experimental"
+	BuildStamp="20231128-2128-Experimental"
 	Name="anas-virtual-machine"
 	Generator="ctest-3.22.1"
 	CompilerName="/usr/bin/g++"
@@ -21,14 +21,14 @@
 	TotalVirtualMemory="3897"
 	TotalPhysicalMemory="3871"
 	LogicalProcessorsPerPhysical="1"
-	ProcessorClockFrequency="2592"
+	ProcessorClockFrequency="2592.01"
 	>
 	<Testing>
-		<StartDateTime>Nov 27 00:23 CET</StartDateTime>
-		<StartTestTime>1701040999</StartTestTime>
+		<StartDateTime>Nov 28 22:28 CET</StartDateTime>
+		<StartTestTime>1701206886</StartTestTime>
 		<TestList/>
-		<EndDateTime>Nov 27 00:23 CET</EndDateTime>
-		<EndTestTime>1701040999</EndTestTime>
+		<EndDateTime>Nov 28 22:28 CET</EndDateTime>
+		<EndTestTime>1701206886</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
