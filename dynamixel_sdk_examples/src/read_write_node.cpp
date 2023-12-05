@@ -82,6 +82,8 @@ ReadWriteNode::~ReadWriteNode()
 }
 
 
+/// @brief 
+/// @param QOS_RKL10V 
 void ReadWriteNode::init_set_position_subscriber(const rclcpp::QoS QOS_RKL10V){
   set_position_subscriber_ = this->create_subscription<SetPosition>(
       "set_position",
